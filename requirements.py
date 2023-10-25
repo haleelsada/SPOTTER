@@ -8,4 +8,5 @@ Flask-Mail==0.9.1
 Flask-Principal==0.4.0
 Flask-RESTful==0.3.9
 googlemaps==4.10.0
+flask
 requests==2.28.2
