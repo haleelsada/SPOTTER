@@ -146,7 +146,3 @@ def hello_world():
 	'''call=request.args.get('cordinates')
 	out = get_rank(call)'''
 	return jsonify({'result':result})
-
-if __name__ == '__main__':
-	app.run(debug=False, port=8002)
-
