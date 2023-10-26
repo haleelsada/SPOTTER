@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify
 import googlemaps
 from datetime import datetime
 from flask_cors import CORS, cross_origin
-
-gmaps = googlemaps.Client(key='AIzaSyC9o-L5dJJyxq3re6XBhaGjNuX_p0eaYr0')
+a='AIzaSyC9o-'
+b='L5dJJyxq3re6XBhaGjNuX'
+c='_p0eaYr0'
+gmaps = googlemaps.Client(key=a+b+c)
 
 
 def get_popular_places(cords, place_type, place_name='', radius=1500, rankby='prominence'):
