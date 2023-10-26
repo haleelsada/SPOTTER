@@ -138,6 +138,8 @@ def start():
 
 @app.route('/test',methods=['POST','GET'])
 def hello_world():
+	name = request.args['name']
+	print(name)
 	print('api called')
 	data = request.get_json()
 	print('got data')
