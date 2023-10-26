@@ -136,6 +136,8 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 def hello_world():
 	print('api called')
 	data = request.get_json()
+	print('got data')
+	print(data)
 	cords=[(i['latitude'],i['longitude']) for i in data['coordinates']]
 	type_=data['type']
 	size=data['size']
